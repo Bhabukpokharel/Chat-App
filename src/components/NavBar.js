@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import GoogleSignin from "../images/Google Image.png";
 import { auth } from "../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";

@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { auth, db } from "../firebase";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 
 const SendMessage = () => {
   const [message, setMessage] = useState("");
+  const scroll = useRef();
 
   const sendMessage = async (event) => {
     event.preventDefault();
